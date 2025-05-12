@@ -47,6 +47,10 @@ body {
 .steam { background: #171d25; }
 .telegram { background: rgba(0, 136, 204, 0.8); }
 .boosty { background: #f15f2c; }
+.pikabu { background: #f4a554; }
+.habr { background: #629fbc; }
+.gamin { background: #f7941d; }
+.dtf { background: #adbdc9; }
 
 .games {
 	display: flex; /* grid */
