@@ -12,6 +12,7 @@ body {
 	padding: 12px;
 	width: 300px;
 	text-align: center;
+	margin: 8px;
 }
 .link {
 	border-radius: 8px;
@@ -30,10 +31,11 @@ body {
     flex-direction: column;
     gap: 15px;
 	padding: 10px;*/
-	display: grid;
+	display: flex; /* grid */
     gap: 10px;
     padding: 5px;
     align-content: space-around;
+	justify-content: space-between;
     flex-wrap: wrap;
 }
 .github { background: #0d1117; }
@@ -46,3 +48,53 @@ body {
 .telegram { background: rgba(0, 136, 204, 0.8); }
 .boosty { background: #f15f2c; }
 
+.games {
+	display: flex; /* grid */
+	flex-wrap: wrap;
+}
+.game {
+	background: #1f1e2591;
+	border-radius: 25px;
+}
+.gamelinks {
+	display: flex; /* grid */
+	gap: 10px;
+	padding: 10px;
+	align-content: space-around;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.gamelink {
+	border-radius: 4px;
+	background: #000;
+	text-decoration: none;
+	padding: 10px;
+	margin: 4px;
+	color: #fff;
+}
+.gamelink:hover {
+	transform: scale(1.11) rotate(2deg);
+}
+.title {
+	text-align: left;
+}
+.title, h3, h4 {
+	padding: 0px;
+	margin: 8px 32px;
+}
+.gamecover {
+	width: 300px;
+	height: 160px;
+	border-radius: 25px;
+}
+.vzerthos {
+	background: url("images/vzerthos_capsule_main_v9.png");
+	background-size: cover;
+}
+.drawngeon {
+	background: url("images/drawngeon_capsule_main.png");
+	background-size: cover;
+}/*
+.gamecover:hover {
+	transform: scale(1.11) rotate(2deg);
+}*/
