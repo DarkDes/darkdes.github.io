@@ -1,10 +1,12 @@
 body {
 	font-family: Arial, sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #fff;
-	background: #141511;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 32px;
+    color: #fff;
+    background: #141511;
+    flex-wrap: wrap;
 }
 .core {
 	border-radius: 15px;
@@ -14,13 +16,24 @@ body {
 	text-align: center;
 	margin: 8px;
 }
+.head {
+	background: url("images/favicon.png");
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	display: inline-block;
+}
 .link {
+	flex: 1;
 	border-radius: 8px;
 	background: #000;
 	text-decoration: none;
 	padding: 10px;
 	font-size: 1.25em;
 	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .link:hover {
 	transform: scale(1.1) rotate(2deg);
@@ -35,7 +48,7 @@ body {
     gap: 10px;
     padding: 5px;
     align-content: space-around;
-	justify-content: space-between;
+	justify-content: flex-start;
     flex-wrap: wrap;
 }
 .github { background: #0d1117; }
@@ -57,23 +70,24 @@ body {
 	flex-wrap: wrap;
 }
 .game {
-	background: #1f1e2591;
+	/*background: #1f1e2591;*/
 	border-radius: 25px;
 }
 .gamelinks {
 	display: flex; /* grid */
 	gap: 10px;
-	padding: 10px;
+	padding: 10px 0 0;
 	align-content: space-around;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 }
 .gamelink {
+	flex: 1;
 	border-radius: 4px;
 	background: #000;
 	text-decoration: none;
 	padding: 10px;
-	margin: 4px;
+	margin: 0px;
 	color: #fff;
 }
 .gamelink:hover {
@@ -81,10 +95,15 @@ body {
 }
 .title {
 	text-align: left;
+	margin: 0 0 16px 0;
+	padding: 0 12px;
 }
-.title, h3, h4 {
-	padding: 0px;
-	margin: 8px 32px;
+.title, h3 {
+	margin: 0px;
+}
+.title, h4 {
+	margin: 0px;
+	margin-top: 8px;
 }
 .gamecover {
 	width: 300px;
